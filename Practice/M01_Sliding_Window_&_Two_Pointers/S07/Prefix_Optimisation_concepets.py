@@ -1,0 +1,16 @@
+'''
+
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        for i in range(1, len(nums)):
+            nums[i] += nums[i - 1]
+        return nums
+'''
+
+class Solution:
+    def largestAltitude(self, gain: List[int]) -> int:
+        n = len(gain)
+        alt = [0] * (n+1)
+        for i in range(1,n+1):
+            alt[i] = alt[i-1] + gain[i-1]
+        return max(alt)
