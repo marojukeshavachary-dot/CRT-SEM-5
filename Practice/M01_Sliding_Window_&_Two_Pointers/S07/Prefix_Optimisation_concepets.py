@@ -5,7 +5,7 @@ class Solution:
         for i in range(1, len(nums)):
             nums[i] += nums[i - 1]
         return nums
-'''
+
 
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
@@ -14,3 +14,4 @@ class Solution:
         for i in range(1,n+1):
             alt[i] = alt[i-1] + gain[i-1]
         return max(alt)
+        '''
