@@ -11,4 +11,6 @@ class Circular_Queue:
         self.front = -1 
         selfrear = -1
         
-    def enqueue(self, size):
+    def enqueue(self, value):
+        #check if queue is full
+        if (self.real + 1)
